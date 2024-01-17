@@ -17,4 +17,9 @@ public class FunRestController {
     public String workout() {
         return "Go to Gym !";
     }
+
+    @GetMapping("/testing")
+    public String testing() {
+        return "GThis is testing";
+    }
 }
