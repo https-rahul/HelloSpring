@@ -20,6 +20,6 @@ public class FunRestController {
 
     @GetMapping("/testing")
     public String testing() {
-        return "GThis is testing";
+        return "This is testing controller";
     }
 }
