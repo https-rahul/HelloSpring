@@ -33,4 +33,10 @@ public class FunRestController {
 
     @Value("${agent.type}")
     private String agentType;
+
+    //creating endpoints for agent info
+    @GetMapping("/agent")
+    public String agent(){
+        return "Agent: " +agentName +" Type: " +agentType;
+    }
 }
