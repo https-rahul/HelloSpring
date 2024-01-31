@@ -11,7 +11,11 @@ public class HelloSpringApplication {
 
 	public static void main(String[] args) {
 
+//		SpringApplication app = new SpringApplication(HelloSpringApplication.class);
+//		app.run(args);
+
 		SpringApplication.run(HelloSpringApplication.class, args);
+//		app.run(args);
 	}
 
 }
