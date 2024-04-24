@@ -10,15 +10,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class InjectionController {
 
+    private final Coach myCoach;
+
     @Autowired
-    private Coach myCoach;
+    public InjectionController(Coach myCoach) {
+        this.myCoach = myCoach;
+    }
 
     @GetMapping("/dailyworkout")
     public String getDailyWorkout(){
         log.info("injected dailyworkout controller");
         return myCoach.getDailyWorkout();
     }
-
     /*
         this is constructor injection, similar to
         Coach theCoach = new InjectionController(theCoach)
