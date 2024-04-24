@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class InjectionController {
 
     private final Coach myCoach;
-
+    // using constructor injection
     @Autowired
     public InjectionController(Coach myCoach) {
         this.myCoach = myCoach;
