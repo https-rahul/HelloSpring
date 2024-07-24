@@ -4,10 +4,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.ComponentScans;
 import org.springframework.context.annotation.Configuration;
-import rest.FunRestController;
-import rest.InjectionController;
+import com.helloSpring.com.HelloSpring.rest.FunRestController;
+import com.helloSpring.com.HelloSpring.rest.InjectionController;
 
 @Slf4j
 @SpringBootApplication(scanBasePackages = "com.helloSpring.com.HelloSpring.*")
