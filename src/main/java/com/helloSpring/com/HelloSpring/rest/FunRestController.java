@@ -1,4 +1,4 @@
-package rest;
+package com.helloSpring.com.HelloSpring.rest;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -14,7 +14,7 @@ public class FunRestController {
     @GetMapping("/")
     public String sayHello() {
         log.info("default controller was called.");
-        return "Hello World, this is my first ever Spring Boot application";
+        return "Hello World, this is my first ever Spring Boot application!";
     }
 
     @GetMapping("/workout")
